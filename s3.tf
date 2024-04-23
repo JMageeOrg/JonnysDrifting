@@ -4,6 +4,6 @@ provider "aws" {
   secret_key = "gYid0hSwOWW6W57k1IHng26zVe6/0nnje5e9KQst"
 }
 
-resource "aws_s3_bucket" "my_bucket" {
-  bucket = "your-unique-bucket-name"
+resource "aws_s3_bucket" "jmdrift-bucket" {
+  bucket = "jm-this-bucket-should-drift"
 }
