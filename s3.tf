@@ -1,8 +1,9 @@
-module "s3-bucket" {
-  source  = "terraform-aws-modules/s3-bucket/aws"
-  version = "4.1.2"
-  tags = {
-    yor_name  = "s3-bucket"
-    yor_trace = "ad2f5f30-f1eb-4b18-8523-61d538082c4b"
-  }
+provider "aws" {
+  region     = "eu-west-1"
+  access_key = "AKIAZYFSNR2HKX6JCVFM"
+  secret_key = "gYid0hSwOWW6W57k1IHng26zVe6/0nnje5e9KQst"
+}
+
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "your-unique-bucket-name"
 }
