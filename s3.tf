@@ -7,8 +7,4 @@ provider "aws" {
 resource "aws_s3_bucket" "jonnysdrifting" {
   bucket = "jm-this-AWSbucket-has-drifted"
 
-  tags = {
-    yor_name  = "jonnysdrifting"
-    yor_trace = "86dae793-5a04-42db-a717-2fac4ac4d6d3"
-  }
 }
