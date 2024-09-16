@@ -1,14 +1,10 @@
 provider "aws" {
   region     = "us-west-2"
-  access_key = "ASIAUFASNETJT4WO7H2R"
-  secret_key = "VVfqYIaZ3jatVIJ2UsfHLmOWz6Krc7M09GoT8Wes"
+  access_key = "AKIAXNGUVLLH4A2PYTEV"
+  secret_key = "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"
 }
 
 resource "aws_s3_bucket" "jonnysdrifting" {
   bucket = "jm-this-AWSbucket-has-drifted"
 
-  tags = {
-    yor_name  = "jonnysdrifting"
-    yor_trace = "723f3ac2-28d6-4a17-8577-2505728a3a04"
-  }
 }
